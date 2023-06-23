@@ -15,7 +15,7 @@ export default function Yoga() {
       </Head>
       <main className={`${inter.className}`}>
           <p>
-            yoga
+            Dance
           </p>          
           <Image
             className="logo"
