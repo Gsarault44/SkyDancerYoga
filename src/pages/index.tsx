@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           />
         </div>
 
-        <a href='/dance' className='home__link'>
+        <Link href='/dance' className='home__link'>
           <h1>Dancing</h1>
           <Image
             src="/dance.jpg"
@@ -32,8 +33,8 @@ export default function Home() {
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             priority
           />
-        </a>
-        <a href='/fitness' className='home__link'>
+        </Link>
+        <Link href='/fitness' className='home__link'>
           <h1>Fitness</h1>
           <Image
             src="/fitness-back-cropped.jpg"
@@ -44,8 +45,8 @@ export default function Home() {
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             priority
           />
-        </a>
-        <a href='/yoga' className='home__link'>
+        </Link>
+        <Link href='/yoga' className='home__link'>
           <h1>Yoga</h1>
           <Image
             src="/yoga-dancer-pose.jpg"
@@ -56,7 +57,7 @@ export default function Home() {
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             priority
           />
-        </a>
+        </Link>
 
       </main>
     </>
