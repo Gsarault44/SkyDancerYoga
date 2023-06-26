@@ -36,7 +36,7 @@ export default function Home() {
         <Link href='/dance' className='home__link'>
           <h1>Dancing</h1>
           <Image
-            src="/dance.jpg"
+            src="/dance.png"
             alt="Dancing"
             width={4900}
             height={3200}

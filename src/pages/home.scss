@@ -1,13 +1,6 @@
 .home {
   display: flex;
 
-  .head-logo {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 999;
-  }
-
   &__link {
     overflow: hidden;
     display: block;

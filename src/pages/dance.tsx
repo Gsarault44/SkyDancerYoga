@@ -31,6 +31,15 @@ export default function Dance() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${cormorantGaramond.className}`}>
+      <div className="head-logo">
+          <Image
+            src="/logo.png"
+            alt="Skydance Entertainment"
+            width={200}
+            height={100}
+            priority
+          />
+        </div>
         <div className="dance-hero">
           <h1>Sharing our passion for dance</h1>
           <Carousel
@@ -45,7 +54,7 @@ export default function Dance() {
               <source src="/band-choreo.mp4" />
             </video>
             <Image
-              src="/dance.jpg"
+              src="/dance.png"
               alt="Fitness"
               width={0}
               height={0}
@@ -63,7 +72,7 @@ export default function Dance() {
             </div>
             <div className="split-media">
               <Image
-                src="/dance.jpg"
+                src="/dance.png"
                 alt="Fitness"
                 width={0}
                 height={0}
