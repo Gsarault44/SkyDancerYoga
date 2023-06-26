@@ -1,8 +1,18 @@
-.button {
+button.button {
   appearance: none;
   border: 1px solid #fff;
   padding: 1rem;
   background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.23s ease-in-out;
+  box-shadow: 1px 1px 3px #fff;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 1px 1px 3px #000;
+  }
 }
 
 .head-logo {
@@ -22,8 +32,8 @@
 }
 
 .header {
-  position: fixed;
-  padding: 2rem;
+  position: absolute;
+  padding: 2.5rem;
   width: 100%;
   z-index: 999;
   background-color: rgba(#000, 0.05);

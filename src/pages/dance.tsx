@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Urbanist } from 'next/font/google'
@@ -8,6 +9,8 @@ import Link from 'next/link';
 const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Dance() {
+  const [showWeddingModal, setShowWeddingModal] = useState(false);
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -179,10 +182,23 @@ export default function Dance() {
             </div>
             <div className="split-content">
               <p>Dancers bring energy and excitement to any event.  Add flare to your meeting, sophistication to your gala, hype to your wedding or bar/bat mitzvah.  If you can dream it we can create it.  The sky&apos;s the limit!</p>
-              <span>Skydancer Entertainment is your number one source for DANCE entertainment!</span>
             </div>
           </div>
+          <h2 className="heading2">Skydancer Entertainment is your number one source for DANCE entertainment!</h2>
         </div>
+        {showWeddingModal && <>
+          <div className='catcher' onClick={() => setShowWeddingModal(!showWeddingModal)}></div>
+          <div className="modal">
+            <span className="close" onClick={() => setShowWeddingModal(!showWeddingModal)}>X</span>
+            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+                <source src="/AudraWedding.mov" />
+            </video>
+            <blockquote>
+              “Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”
+              <cite>—Audra C.</cite>
+            </blockquote>
+          </div>
+        </>}
         <div className="what-we-do">
           <div className="inner">
             <div className="what-we-do-content">
@@ -191,7 +207,8 @@ export default function Dance() {
                 <source src="/skydancer-promo.mov" />
               </video>
               <ul>
-                <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p></li>
+                <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p>
+                <span className="clickable" onClick={() => setShowWeddingModal(!showWeddingModal)}>View Sample</span></li>
                 <li><p><strong>Corporate and other Events:</strong>  Choreograph and perform productions for corporate events.</p></li>
                 <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
                 <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li>
