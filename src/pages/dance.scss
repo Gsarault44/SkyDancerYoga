@@ -1,0 +1,70 @@
+.dance-hero {
+  position: relative;
+  background-image: fixed;
+
+  h1 {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: #fff;
+    font-size: 54px;
+    text-align: center;
+  }
+
+  video {
+    display: block;
+  }
+}
+
+.dance-split-media-content {
+  padding: 3rem 0;
+  
+  &:nth-of-type(2) {
+    background-color: #fff;
+    * {
+      color: #000;
+    }
+    .button  {
+      border-color: #000;
+    }
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    * {
+      flex: 1 1 50%;
+    }
+
+    .split-content {
+      padding: 0 3rem;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 2rem;
+      max-width: 75%;
+    }
+  }
+}
+
+.video-banner {
+  text-align: center;
+  padding: 3rem 0;
+
+  &-content {
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 34px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.inner {
+  max-width: 95%;
+  margin: 0 auto;
+}

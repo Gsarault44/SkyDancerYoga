@@ -21,19 +21,6 @@ export default function Home() {
             priority
           />
         </div>
-
-        <Link href='/dance' className='home__link'>
-          <h1>Dancing</h1>
-          <Image
-            src="/dance.jpg"
-            alt="Dancing"
-            width={0}
-            height={0}
-            sizes='33vw'
-            style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-            priority
-          />
-        </Link>
         <Link href='/fitness' className='home__link'>
           <h1>Fitness</h1>
           <Image
@@ -41,7 +28,19 @@ export default function Home() {
             alt="Fitness"
             width={0}
             height={0}
-            sizes='33vw'
+            sizes='100vw'
+            style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+            priority
+          />
+        </Link>
+        <Link href='/dance' className='home__link'>
+          <h1>Dancing</h1>
+          <Image
+            src="/dance.jpg"
+            alt="Dancing"
+            width={4900}
+            height={3200}
+            sizes='100vw'
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             priority
           />
@@ -53,7 +52,7 @@ export default function Home() {
             alt="Yoga"
             width={0}
             height={0}
-            sizes='33vw'
+            sizes='100vw'
             style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
             priority
           />
