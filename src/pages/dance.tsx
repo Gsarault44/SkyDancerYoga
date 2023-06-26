@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Crimson_Text } from 'next/font/google'
+import { Urbanist } from 'next/font/google'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Link from 'next/link';
 
-const cormorantGaramond = Crimson_Text({ subsets: ['latin'], weight: '400' })
+const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Dance() {
   const responsive = {
@@ -30,23 +31,40 @@ export default function Dance() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${cormorantGaramond.className}`}>
-      <div className="head-logo">
-          <Image
-            src="/logo.png"
-            alt="Skydance Entertainment"
-            width={200}
-            height={100}
-            priority
-          />
-        </div>
+      <main className={`${urbanist.className} dance`}>
+        <header className="header">
+          <div>
+            <nav>
+              <Link href="/fitness">
+                Fitness
+              </Link>
+              <Link href="/dance">
+                Dance
+              </Link>
+              <Link href="/yoga">
+                Yoga
+              </Link>
+            </nav>
+            <div className="head-logo">
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  alt="Skydance Entertainment"
+                  width={200}
+                  height={100}
+                  priority
+                />
+              </Link>
+            </div>
+          </div>
+        </header>
         <div className="dance-hero">
           <h1>Sharing our passion for dance</h1>
           <Carousel
             responsive={responsive}
             containerClass="carousel"
             autoPlay={true}
-            transitionDuration={500}
+            transitionDuration={800}
             arrows={false}
             infinite={true}
           >
@@ -59,7 +77,70 @@ export default function Dance() {
               width={0}
               height={0}
               sizes='100vw'
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/ballet-yellow.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/ballet.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/bar-mitzvah.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/bubbles.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/crowd.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/follow-the-leader.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
+            <Image
+              src="/pink.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
             />
           </Carousel>
@@ -102,33 +183,71 @@ export default function Dance() {
             </div>
           </div>
         </div>
-        <div className="video-banner">
+        <div className="what-we-do">
           <div className="inner">
-            <div className="video-banner-content">
-              <h3>What We Do</h3>
-              <p>Choreograph and teach first dances for wedding couples </p>
+            <div className="what-we-do-content">
+              <h2 className="heading">What We Do</h2>
+              <video autoPlay muted loop style={{ width: '100%', height: '400px', objectFit: 'contain' }}>
+                <source src="/skydancer-promo.mov" />
+              </video>
+              <ul>
+                <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p></li>
+                <li><p><strong>Corporate and other Events:</strong>  Choreograph and perform productions for corporate events.</p></li>
+                <li><p><strong>Flash mobs:</strong>  Choreograph and perform flash mobs for any event.</p></li>
+                <li><p><strong>Instruct and Perform:</strong>  Choreograph, instruct and perform salsa, ballroom, hip hop, broadway jazz, etc.</p></li>
+                <li><p><strong>Bands:</strong> Choreograph and instruct bands.</p></li>
+              </ul>
             </div>
-            <video controls style={{ width: '100%', height: 'auto', objectFit: 'contain' }}>
-              <source src="/AudraWedding.mov" />
-            </video>
+            <div className="what-we-do-content">
+              
+            </div>
           </div>
         </div>
-        <div>
-        <Carousel
-          responsive={responsive}
-          containerClass="carousel"
-        >
-          <div>
-            “Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”
-            —Audra C.
-          </div>
-          <div>
-            “Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”
-            —Audra C.
-          </div>
-        </Carousel>
+        <div className="testimonials">
+          <h2 className="heading">Testimonials</h2>
+          <Carousel
+            responsive={responsive}
+            containerClass="carousel inner"
+            infinite
+          >
+            <div className="quote">
+              <blockquote>
+                <p>“Wendy was fantastic to work with on our wedding first dance. Not only was she creative with her choreography for a dance that really wowed our guests, but she was also extremely patient with us helping us to nail it on the day of the wedding.”</p>
+              </blockquote>
+              <cite>—Audra C.</cite>
+            </div>
+            <div className="quote">
+              <blockquote>
+                <p>“Working with Skydancer Entertainment has given me the privilege to work as a performer and motivator to help families and their guests celebrate moments they will never forget.”</p>
+              </blockquote>
+              <cite>—Jamie S.</cite>
+            </div>
+          </Carousel>
+        </div>
+        {/* <div className="video-break">
+          <video autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
+            <source src="/skydancer-promo.mov" />
+          </video>
+        </div> */}
+        <div className="about">
+          <h2 className="heading">About</h2>
+          <p>Wendy Christensen began her dance career at age six with jazz, tap and ballet.  She went on to compete and place in the top three in several dance competitions both solo and with her high school dance team.  In college she was introduced to ballroom-dance and began competing in DanceSport competitions across the country.  In 2003 she and her partner took first place in Amateur Cabaret at the National Competition, making them National Champions.  Since moving to the DC area she has taken up salsa dance and continues to perform and compete at Salsa Congresses across the country.  Wendy holds a B.S in Exercise Science and is a certified exercise physiologist through the American College of Sports Medicine.  When she isn’t dancing you can find her teaching yoga, training clients or teaching couples their first dance for their wedding!</p>
+          <Image
+            src="/wendy.png"
+            alt="Fitness"
+            width={0}
+            height={0}
+            sizes='100vw'
+            style={{ width: '100%', height: '90%', objectFit: 'cover' }}
+            priority
+          />
         </div>
       </main>
+      <footer className="footer">
+        <div className="inner">
+          <p>Copyright &copy; {new Date().getFullYear()} SkydancerEntertainment - All Rights Reserved.</p>
+        </div>
+      </footer>
     </>
   )
 }
