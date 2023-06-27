@@ -51,7 +51,7 @@ export default function Dance() {
             <div className="head-logo">
               <Link href="/">
                 <Image
-                  src="/logo.png"
+                  src="/logo-white.png"
                   alt="Skydance Entertainment"
                   width={200}
                   height={100}
@@ -67,13 +67,10 @@ export default function Dance() {
             responsive={responsive}
             containerClass="carousel"
             autoPlay={true}
-            transitionDuration={800}
+            transitionDuration={1000}
             arrows={false}
             infinite={true}
           >
-            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
-              <source src="/band-choreo.mp4" />
-            </video>
             <Image
               src="/dance.png"
               alt="Fitness"
@@ -119,6 +116,9 @@ export default function Dance() {
               style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
             />
+            <video autoPlay muted loop style={{ width: '100%', height: '100vh', objectFit: 'cover' }}>
+              <source src="/band-choreo.mp4" />
+            </video>
             <Image
               src="/crowd.png"
               alt="Fitness"

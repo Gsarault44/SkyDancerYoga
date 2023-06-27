@@ -1,6 +1,14 @@
 .home {
-  display: flex;
+  
 
+  .splash-row {
+    display: flex;
+
+    img {
+      opacity: 0.1;
+      animation: fadeIn 0.5s ease-in forwards;
+    }
+  }
   &__link {
     overflow: hidden;
     display: block;
@@ -51,6 +59,16 @@
       transform: translate(-50%);
       font-size: 68px;
       text-shadow: 1px 0px 0px #000;
+      z-index: 9;
     }
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  } 
+  to {
+    opacity: 1;
+  } 
 }
