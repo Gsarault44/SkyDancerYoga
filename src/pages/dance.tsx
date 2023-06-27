@@ -220,7 +220,7 @@ export default function Dance() {
             </div>
           </div>
         </div>
-        <div className="testimonials">
+        {/* <div className="testimonials">
           <h2 className="heading">Testimonials</h2>
           <Carousel
             responsive={responsive}
@@ -240,24 +240,26 @@ export default function Dance() {
               <cite>—Jamie S.</cite>
             </div>
           </Carousel>
-        </div>
+        </div> */}
         {/* <div className="video-break">
           <video autoPlay muted loop style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
             <source src="/skydancer-promo.mov" />
           </video>
         </div> */}
         <div className="about">
-          <h2 className="heading">About</h2>
-          <p>Wendy Christensen began her dance career at age six with jazz, tap and ballet.  She went on to compete and place in the top three in several dance competitions both solo and with her high school dance team.  In college she was introduced to ballroom-dance and began competing in DanceSport competitions across the country.  In 2003 she and her partner took first place in Amateur Cabaret at the National Competition, making them National Champions.  Since moving to the DC area she has taken up salsa dance and continues to perform and compete at Salsa Congresses across the country.  Wendy holds a B.S in Exercise Science and is a certified exercise physiologist through the American College of Sports Medicine.  When she isn’t dancing you can find her teaching yoga, training clients or teaching couples their first dance for their wedding!</p>
-          <Image
-            src="/wendy.png"
-            alt="Fitness"
-            width={0}
-            height={0}
-            sizes='100vw'
-            style={{ width: '100%', height: '90%', objectFit: 'cover' }}
-            priority
-          />
+          <div className="about__inner">
+            <h2 className="heading">About</h2>
+            <p>Wendy Christensen began her dance career at age six with jazz, tap and ballet.  She went on to compete and place in the top three in several dance competitions both solo and with her high school dance team.  In college she was introduced to ballroom-dance and began competing in DanceSport competitions across the country.  In 2003 she and her partner took first place in Amateur Cabaret at the National Competition, making them National Champions.  Since moving to the DC area she has taken up salsa dance and continues to perform and compete at Salsa Congresses across the country.  Wendy holds a B.S in Exercise Science and is a certified exercise physiologist through the American College of Sports Medicine.  When she isn’t dancing you can find her teaching yoga, training clients or teaching couples their first dance for their wedding!</p>
+            <Image
+              src="/wendy.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '90%', objectFit: 'cover' }}
+              priority
+            />
+          </div>
         </div>
       </main>
       <footer className="footer">
