@@ -14,7 +14,7 @@ export default function Home() {
       <main className="home">
         <div className="head-logo">
           <Image
-            src="/logo-white.png"
+            src="/logo.png"
             alt="Skydance Entertainment"
             width={200}
             height={100}

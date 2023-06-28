@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
-        html {
+        html * {
           font-family: ${inter.style.fontFamily};
         }
       `}</style>

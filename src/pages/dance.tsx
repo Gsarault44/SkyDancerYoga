@@ -51,7 +51,7 @@ export default function Dance() {
             <div className="head-logo">
               <Link href="/">
                 <Image
-                  src="/logo-white.png"
+                  src="/logo.png"
                   alt="Skydance Entertainment"
                   width={200}
                   height={100}
@@ -146,6 +146,15 @@ export default function Dance() {
               style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
               priority
             />
+            <Image
+              src="/stretch.png"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+              priority
+            />
           </Carousel>
         </div>
         <div className="dance-split-media-content">
@@ -156,7 +165,7 @@ export default function Dance() {
             </div>
             <div className="split-media">
               <Image
-                src="/dance.png"
+                src="/ballet2.png"
                 alt="Fitness"
                 width={0}
                 height={0}
@@ -171,7 +180,7 @@ export default function Dance() {
           <div className="inner">
             <div className="split-media">
               <Image
-                src="/stretch.jpg"
+                src="/break-dancing.png"
                 alt="Fitness"
                 width={0}
                 height={0}
@@ -204,7 +213,7 @@ export default function Dance() {
             <div className="what-we-do-content">
               <h2 className="heading">What We Do</h2>
               <video autoPlay muted loop style={{ width: '100%', height: '400px', objectFit: 'contain' }}>
-                <source src="/skydancer-promo.mov" />
+                <source src="/skydancer-promo2.mp4" />
               </video>
               <ul>
                 <li><p><strong>Choreograph and Teach:</strong> first dances for wedding couples.</p>
@@ -259,6 +268,23 @@ export default function Dance() {
               style={{ width: '100%', height: '90%', objectFit: 'cover' }}
               priority
             />
+          </div>
+        </div>
+        <div className="auditions">
+          <h2 className="heading auditions__heading">Dance with us</h2>
+          <div className="auditions__inner">
+            <div className="auditions__content">
+              <h1>We are currently casting all styles of dance! Tell us a bit about yourself and we will reach out to schedule your audition!</h1>
+            </div>
+            <form className="auditions__form" action="mailto:gsarault@gmail.com" method="get">
+              <label htmlFor="subject">Subject:</label>
+              <input type="text" name="subject" placeholder="Your Name" />
+              <label htmlFor="email">Email:</label>
+              <input type="email" name="email" placeholder="Your Email" />
+              <label htmlFor="body">Message:</label>
+              <textarea name="body" placeholder="I would love to join your dance team, lets get a chat started" />
+              <input type="submit" value="Send" />
+            </form>
           </div>
         </div>
       </main>

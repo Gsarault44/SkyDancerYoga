@@ -20,6 +20,10 @@ button.button {
   top: 5px;
   right: 5px;
   z-index: 999;
+
+  img {
+    filter: grayscale(1) brightness(3.5);
+  }
 }
 
 .inner {
