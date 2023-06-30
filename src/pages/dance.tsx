@@ -35,9 +35,9 @@ export default function Dance() {
     if (splitLeftImageRef.current) {
       observer.observe(splitLeftImageRef.current);
     }
-    if(splitRightImageRef) {
-      observer.observe(splitRightImageRef.current);
-    }
+    // if(splitRightImageRef) {
+    //   observer.observe(splitRightImageRef.current);
+    // }
 
     return () => {
       observer.disconnect();

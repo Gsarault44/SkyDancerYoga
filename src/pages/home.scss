@@ -1,4 +1,13 @@
 .home {
+
+  .inline-logo {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    filter: grayscale(1) brightness(3.5);
+    z-index: 99;
+  }
   
 
   .splash-row {

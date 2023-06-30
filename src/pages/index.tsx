@@ -26,7 +26,16 @@ export default function Home() {
               />
           </Link>
           <Link href='/dance' className='home__link'>
-            <h1>Dancing</h1>
+            <h1>Entertainment</h1>
+            <div className="inline-logo">
+              <Image
+                src="/logo.png"
+                alt="Skydance Entertainment"
+                width={250}
+                height={100}
+                priority
+              />
+            </div>
             <Image
               src="/dance.png"
               alt="Dancing"
@@ -39,6 +48,15 @@ export default function Home() {
           </Link>
           <Link href='/yoga' className='home__link'>
             <h1>Yoga</h1>
+            <div className="inline-logo">
+              <Image
+                src="/yoga-logo.png"
+                alt="Skydance Entertainment"
+                width={250}
+                height={100}
+                priority
+              />
+            </div>
             <Image
               src="/yoga-dancer-pose.jpg"
               alt="Yoga"

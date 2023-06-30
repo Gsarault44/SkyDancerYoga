@@ -42,6 +42,10 @@ button.button {
   z-index: 999;
   background-color: rgba(#000, 0.05);
 
+  &.home {
+    background-color: transparent;
+  }
+
   nav a {
     padding: 2.25rem;
     text-transform: uppercase;
