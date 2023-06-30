@@ -12,15 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="home">
-        <div className="head-logo">
-          <Image
-            src="/logo.png"
-            alt="Skydance Entertainment"
-            width={200}
-            height={100}
-            priority
-            />
-        </div>
         <div className="splash-row">
           <Link href='/fitness' className='home__link'>
             <h1>Fitness</h1>

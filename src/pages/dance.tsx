@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Urbanist } from 'next/font/google'
@@ -10,6 +10,40 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
 
 export default function Dance() {
   const [showWeddingModal, setShowWeddingModal] = useState(false);
+
+  const splitLeftImageRef = useRef(null);
+  const splitRightImageRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Trigger when at least 50% of the image is visible
+    };
+
+    const handleIntersect = (entries: any[], observer: { unobserve: (arg0: any) => void; }) => {
+      entries.forEach((entry: { isIntersecting: any; target: { classList: { add: (arg0: string) => void; }; }; }) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in'); // Add a CSS class for fading in the image
+          observer.unobserve(entry.target); // Stop observing once the image is visible
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, options);
+
+    if (splitLeftImageRef.current) {
+      observer.observe(splitLeftImageRef.current);
+    }
+    if(splitRightImageRef) {
+      observer.observe(splitRightImageRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
 
   const responsive = {
     desktop: {
@@ -35,32 +69,6 @@ export default function Dance() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${urbanist.className} dance`}>
-        <header className="header">
-          <div>
-            <nav>
-              <Link href="/fitness">
-                Fitness
-              </Link>
-              <Link href="/dance">
-                Dance
-              </Link>
-              <Link href="/yoga">
-                Yoga
-              </Link>
-            </nav>
-            <div className="head-logo">
-              <Link href="/">
-                <Image
-                  src="/logo.png"
-                  alt="Skydance Entertainment"
-                  width={200}
-                  height={100}
-                  priority
-                />
-              </Link>
-            </div>
-          </div>
-        </header>
         <div className="dance-hero">
           <h1>Sharing our passion for dance</h1>
           <Carousel
@@ -165,6 +173,7 @@ export default function Dance() {
             </div>
             <div className="split-media">
               <Image
+                ref={splitRightImageRef}
                 src="/ballet2.png"
                 alt="Fitness"
                 width={0}
@@ -180,6 +189,7 @@ export default function Dance() {
           <div className="inner">
             <div className="split-media">
               <Image
+                ref={splitLeftImageRef}
                 src="/break-dancing.png"
                 alt="Fitness"
                 width={0}
@@ -270,7 +280,7 @@ export default function Dance() {
             />
           </div>
         </div>
-        <div className="auditions">
+        {/* <div className="auditions">
           <h2 className="heading auditions__heading">Dance with us</h2>
           <div className="auditions__inner">
             <div className="auditions__content">
@@ -286,7 +296,7 @@ export default function Dance() {
               <input type="submit" value="Send" />
             </form>
           </div>
-        </div>
+        </div> */}
       </main>
       <footer className="footer">
         <div className="inner">

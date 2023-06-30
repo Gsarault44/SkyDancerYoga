@@ -86,6 +86,12 @@
 
   img {
     box-shadow: 1px 1px 10px 2px #000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    
+    &.fade-in {
+      opacity: 1;
+    }
   }
 }
 
