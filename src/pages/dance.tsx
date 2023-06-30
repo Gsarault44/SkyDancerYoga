@@ -11,8 +11,8 @@ const urbanist = Urbanist({ subsets: ['latin'], weight: ['400', '700'] })
 export default function Dance() {
   const [showWeddingModal, setShowWeddingModal] = useState(false);
 
-  const splitLeftImageRef = useRef(null);
-  const splitRightImageRef = useRef(null);
+  const imageRefs = useRef([]);
+  const textRefs = useRef([]);
 
   useEffect(() => {
     const options = {
@@ -32,12 +32,18 @@ export default function Dance() {
 
     const observer = new IntersectionObserver(handleIntersect, options);
 
-    if (splitLeftImageRef.current) {
-      observer.observe(splitLeftImageRef.current);
-    }
-    // if(splitRightImageRef) {
-    //   observer.observe(splitRightImageRef.current);
-    // }
+    imageRefs.current.forEach((imageRef) => {
+      if (imageRef) {
+        observer.observe(imageRef);
+      }
+    });
+
+    textRefs.current.forEach((textRef) => {
+      if (textRef) {
+        observer.observe(textRef);
+      }
+    });
+    
 
     return () => {
       observer.disconnect();
@@ -167,13 +173,13 @@ export default function Dance() {
         </div>
         <div className="dance-split-media-content">
           <div className="inner">
-            <div className="split-content">
+            <div className="split-content" ref={(el: never) => (textRefs.current[0] = el)}>
               <p>Skydancer Entertainment is a preeminent dance casting agency based in the Washington DC area.  We cast dancers of all genres for every type of event in every part of the United States.</p>
               <button className="button">Get in Touch</button>
             </div>
             <div className="split-media">
               <Image
-                ref={splitRightImageRef}
+                ref={(el: never) => (imageRefs.current[0] = el)}
                 src="/ballet2.png"
                 alt="Fitness"
                 width={0}
@@ -189,7 +195,7 @@ export default function Dance() {
           <div className="inner">
             <div className="split-media">
               <Image
-                ref={splitLeftImageRef}
+                ref={(el: never) => (imageRefs.current[1] = el)}
                 src="/break-dancing.png"
                 alt="Fitness"
                 width={0}
@@ -199,7 +205,7 @@ export default function Dance() {
                 priority
               />
             </div>
-            <div className="split-content">
+            <div className="split-content right" ref={(el: never) => (textRefs.current[1] = el)}>
               <p>Dancers bring energy and excitement to any event.  Add flare to your meeting, sophistication to your gala, hype to your wedding or bar/bat mitzvah.  If you can dream it we can create it.  The sky&apos;s the limit!</p>
             </div>
           </div>
