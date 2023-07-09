@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <div className="head-logo">
               <Link href="/">
                 <Image
-                  src="/logo.png"
+                  src="/yoga-logo.png"
                   alt="Skydance Entertainment"
                   width={250}
                   height={100}

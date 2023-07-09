@@ -11,63 +11,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="home">
-        <div className="splash-row">
-          <Link href='/fitness' className='home__link'>
-            <h1>Fitness</h1>
-            <Image
-              src="/fitness-back-cropped.jpg"
-              alt="Fitness"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-              priority
-              />
-          </Link>
-          <Link href='/dance' className='home__link'>
-            <h1>Entertainment</h1>
-            <div className="inline-logo">
-              <Image
-                src="/logo.png"
-                alt="Skydance Entertainment"
-                width={250}
-                height={100}
-                priority
-              />
-            </div>
-            <Image
-              src="/dance.png"
-              alt="Dancing"
-              width={4900}
-              height={3200}
-              sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-              priority
-            />
-          </Link>
-          <Link href='/yoga' className='home__link'>
-            <h1>Yoga</h1>
-            <div className="inline-logo">
-              <Image
-                src="/yoga-logo.png"
-                alt="Skydance Entertainment"
-                width={250}
-                height={100}
-                priority
-              />
-            </div>
-            <Image
-              src="/yoga-dancer-pose.jpg"
-              alt="Yoga"
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-              priority
-            />
-          </Link>
-        </div>
+      <main className={`home`}>
+          <p>
+            yoga
+          </p>          
+          <Image
+            className="logo"
+            src="/yoga-logo.png"
+            alt="Next.js Logo"
+            width={250}
+            height={100}
+            priority
+          />
       </main>
     </>
   )
