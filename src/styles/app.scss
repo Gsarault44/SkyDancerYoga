@@ -37,30 +37,31 @@ button.button {
 
 .header {
   position: absolute;
-  padding: 2.5rem;
+  padding: 0 2.5rem;
   width: 100%;
   z-index: 999;
   background-color: rgba(#000, 0.05);
+  nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      font-size: 22px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid transparent;
+      background-color: transparent;
+      transition: all 0.34s ease-in-out;
 
-  &.home {
-    background-color: transparent;
-  }
-
-  nav a {
-    padding: 2.25rem;
-    text-transform: uppercase;
-    font-size: 22px;
-    letter-spacing: 2px;
-    border-bottom: 1px solid transparent;
-    background-color: transparent;
-    transition: all 0.34s ease-in-out;
-
-    &:hover {
-      border-bottom: 1px solid #fff;
-      background-color: rgba(#fff, 0.05);
+      &:hover {
+        border-bottom: 1px solid #fff;
+        background-color: rgba(#fff, 0.05);
+      }
     }
   }
 }
-
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 @import "../pages/*.scss";

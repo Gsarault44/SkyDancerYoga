@@ -10,7 +10,6 @@ const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  console.log(router);
   return (
     <>
       <style jsx global>{`
@@ -19,31 +18,34 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
-      {router.pathname != '/' && <div>
-            
-            <nav>
-              <Link href="/fitness">
-                Fitness
-              </Link>
-              <Link href="/dance">
-                Dance
-              </Link>
-              <Link href="/yoga">
-                Yoga
-              </Link>
-            </nav>
-            <div className="head-logo">
-              <Link href="/">
-                <Image
-                  src="/yoga-logo.png"
-                  alt="Skydance Entertainment"
-                  width={250}
-                  height={100}
-                  priority
-                />
-              </Link>
-            </div>
-          </div>}
+        <div>
+          <nav>
+            <Link href="/about">
+              About
+            </Link>
+            <Link href="/blog">
+              Blog
+            </Link>
+            <Link href="/classes">
+              Classes
+            </Link>
+            <Link href="https://sky-dancer.vercel.app/  ">
+              <Image
+                src="/yoga-logo.png"
+                alt="Skydance Entertainment"
+                width={250}
+                height={100}
+                priority
+              />
+            </Link>
+            <Link href="#">
+              Fitness
+            </Link>
+            <Link href="https://sky-dancer.vercel.app/dance">
+              Entertainment
+            </Link>
+          </nav>
+        </div>
         </header>
       <Component {...pageProps} />
     </>
