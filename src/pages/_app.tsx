@@ -7,7 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
-const pop = Poppins({ weight: "200", subsets: ['latin'] })
+const pop = Poppins({ weight: ["200", "500"], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -19,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         }
         html body * {
           font-family: ${pop.style.fontFamily};
+          font-weight: 200;
         }
       `}</style>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
@@ -37,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <Image
                 src="/yoga-logo.png"
                 alt="Skydance Entertainment"
-                width={250}
+                width={200}
                 height={100}
                 priority
               />
