@@ -1,5 +1,9 @@
 .home {
-  
+  .slick-slide {
+    * { 
+      max-height: 100vh;
+    }
+  }
 }
 
 .about {
@@ -12,8 +16,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.4;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1.95) 51%);
+    opacity: 0.6;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 45%, rgb(0, 0, 0, 1) 50%)
   }
 
   &__content {
