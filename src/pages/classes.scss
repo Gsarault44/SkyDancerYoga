@@ -1,10 +1,8 @@
 .classes {
-  padding-bottom: 10rem;
-
   .button {
     background: #fff;
     color: #000;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 12px;
     display: inline-block;
@@ -52,7 +50,7 @@
     max-width: 1260px;
     @media all and (min-width: 575px) {
       flex-direction: row;
-      padding: 3rem 0;
+      padding: 4rem 0;
     }
 
     > * {
@@ -60,15 +58,15 @@
     }
 
     > div {
-      padding: 1rem;
-      @media all and (min-width: 575px) {
-        padding: 3rem;
-      }
+      padding: 0 1rem;
+    }
+
+    p, h1 {
+      margin-bottom: 1rem; 
     }
 
     h4 {
       display: inline-block;
-      font-weight: bold;
       cursor: pointer;
       border-bottom: 1px solid transparent;
       transition: all 0.23s ease-in-out;
@@ -116,8 +114,9 @@
     background: #000;
     z-index: 0;
     opacity: 0.15;
+    pointer-events: none;
   }
-  p {
+  p,h1 {
     margin-bottom: 1rem; 
   }
   span {

@@ -18,7 +18,7 @@ export default function Home() {
     autoplaySpeed: 4000,
   };
 
-  const [isHovering, setIsHovered] = useState(true);
+  const [isHovering, setIsHovered] = useState(false);
 
 
   return (
@@ -32,15 +32,6 @@ export default function Home() {
       <main className={`classes`}>
         <section className="classes-hero" style={{ backgroundImage: 'url(/natarajasana.jpg)'}}>
           <h1>Tailored yoga sessions designed to restore your body&apos;s harmony, leaving you revitalized and flexible.</h1>
-          {/* <Image
-            src="/chakras-concept-body.jpg"
-            alt="Fitness"
-            width={0}
-            height={0}
-            sizes='100vw'
-            style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
-            priority
-          /> */}
         </section>
         <section className="split-content">
           <div>
@@ -51,7 +42,7 @@ export default function Home() {
                 className={isHovering ? 'open' : ''}
                 onClick={() => setIsHovered(!isHovering)}
               >
-                Props needed 
+                Props needed &nbsp;
                 <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L9 9L17 1" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
                 </svg>

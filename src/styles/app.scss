@@ -58,8 +58,20 @@ button.button {
         border-bottom: 1px solid #fff;
       }
     }
+    a.logo {
+      &:hover {
+        border-bottom: 0;
+      }
+    }
   }
 }
+footer {
+  padding: 1rem 0;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
 @import 'slick-carousel/slick/slick.css';
 @import 'slick-carousel/slick/slick-theme.css';
 

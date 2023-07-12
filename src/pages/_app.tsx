@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import '@styles/app.scss';
@@ -11,6 +12,27 @@ const pop = Poppins({ weight: ["200", "500"], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  const currentYear = new Date().getFullYear();  
+
+
+  const [anchorTarget, setAnchorTarget] = useState(null);
+
+  /*
+   * When the component mounts and/or updates, set our AnchorTarget based
+   * on the itemName
+   */
+  useEffect(() => {
+    setAnchorTarget(document.getElementById('about'));
+  }, []);
+
+  /*
+   * Where all the magic happens -- scrollIntoView on click
+   */
+  const handleClick = event => {
+    event.preventDefault();
+    anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <>
       <style jsx global>{`
@@ -25,7 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <header className={`header ${router.pathname == '/' && 'home'}`}>
         <div>
           <nav>
-            <Link href="/about">
+            <Link href="#about" onClick={handleClick}>
               About
             </Link>
             <Link href="/blog">
@@ -34,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Link href="/classes">
               Classes
             </Link>
-            <Link href="https://sky-dancer.vercel.app/  ">
+            <Link href="/" className="logo">
               <Image
                 src="/yoga-logo.png"
                 alt="Skydance Entertainment"
@@ -53,6 +75,9 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
         </header>
       <Component {...pageProps} />
+      <footer>
+        <p>Copyright &copy; {currentYear} SkydancerEntertainment - All Rights Reserved.</p>
+      </footer>
     </>
   )
 }

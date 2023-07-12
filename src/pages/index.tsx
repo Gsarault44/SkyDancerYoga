@@ -181,7 +181,7 @@ export default function Home() {
               />
             </div>
           </Slider>
-        <section className="about">
+        <section className="about" id="about">
           <Image
             src="/waterfall.jpg"
             alt="Fitness"
