@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
-const pop = Poppins({ weight: ["200", "500"], subsets: ['latin'] })
+const pop = Poppins({ weight: ["300", "500"], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

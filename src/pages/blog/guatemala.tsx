@@ -44,22 +44,22 @@ export default function Home() {
       </Head>
       <main className={`blog`}>
         <section className="blog-hero" style={{ backgroundImage: 'url(/lotus-flower.jpg)'}}>
-          <h1>{blogs[0].title}</h1>
+          <h1>{blogs[2].title}</h1>
         </section>
         <section className="blog">
           <div className="blog-content">
             <div className="blog-media">
               <Image
-                src={blogs[0].imgSrc}
-                alt={blogs[0].imgAlt}
+                src={blogs[2].imgSrc}
+                alt={blogs[2].imgAlt}
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ width: '90%', height: '500px', objectFit: 'cover' }}
+                style={{ width: '90%', height: '500px', objectFit: 'contain' }}
                 priority
               />
             </div>
-            <div className="blog-body" dangerouslySetInnerHTML={{ __html: blogs[0].content }}/>
+            <div className="blog-body" dangerouslySetInnerHTML={{ __html: blogs[2].content }}/>
           </div>
         </section>
       </main>
