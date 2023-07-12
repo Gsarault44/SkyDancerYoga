@@ -21,16 +21,19 @@ export default function App({ Component, pageProps }: AppProps) {
    * When the component mounts and/or updates, set our AnchorTarget based
    * on the itemName
    */
+  const about = document.getElementById('about') as HTMLElement;
   useEffect(() => {
-    setAnchorTarget(document.getElementById('about'));
-  }, []);
+    if(about) {
+      setAnchorTarget(about);
+    };
+  }, [about]);
 
   /*
    * Where all the magic happens -- scrollIntoView on click
    */
-  const handleClick = event => {
+  const handleClick = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
-    anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    anchorTarget && anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
