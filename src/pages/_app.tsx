@@ -65,6 +65,9 @@ export default function App({ Component, pageProps }: AppProps) {
                 priority
               />
             </Link>
+            <Link href="/retreats">
+              Retreats
+            </Link>
             <Link href="#">
               Fitness
             </Link>
