@@ -74,15 +74,6 @@ export default function App({ Component, pageProps }: AppProps) {
             />
           </div>
           <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
-            <Link href="/" onClick={handleClick}>
-              About
-            </Link>
-            <Link href="/blog">
-              Blog
-            </Link>
-            <Link href="/classes">
-              Classes
-            </Link>
             <Link href="/" className="logo">
               <Image
                 src="/yoga-logo.png"
@@ -92,8 +83,17 @@ export default function App({ Component, pageProps }: AppProps) {
                 priority
               />
             </Link>
+            <Link href="/" onClick={handleClick}>
+              About
+            </Link>
             <Link href="/retreats">
               Retreats
+            </Link>
+            <Link href="/classes">
+              Classes
+            </Link>
+            <Link href="/blog">
+              Blog
             </Link>
             <Link href="#">
               Fitness
