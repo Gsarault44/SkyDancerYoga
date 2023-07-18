@@ -7,15 +7,18 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
 const pop = Poppins({ weight: ["300", "500"], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { pathname } = useRouter();
   const router = useRouter();
   const currentYear = new Date().getFullYear();  
 
 
   const [anchorTarget, setAnchorTarget] = useState(null);
+  const [menuStatus, setMenuStatus] = useState(false);
 
   /*
    * When the component mounts and/or updates, set our AnchorTarget based
@@ -31,8 +34,13 @@ export default function App({ Component, pageProps }: AppProps) {
   const handleClick = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     router.push('/#about', undefined, { shallow: true })
+    setMenuStatus(false)
     anchorTarget && anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+
+  useEffect(() => {
+    setMenuStatus(false); // Close the navigation panel
+  }, [ pathname ]);
 
   return (
     <>
@@ -47,7 +55,25 @@ export default function App({ Component, pageProps }: AppProps) {
       `}</style>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
         <div>
-          <nav>
+          <div className="menu-button">
+            <Link href="/" className="logo">
+              <Image
+                src="/yoga-logo.png"
+                alt="Skydance Entertainment"
+                width={100}
+                height={50}
+                priority
+              />
+            </Link>
+            <Image
+              src={`${menuStatus ? '/close.svg' : '/menu-svgrepo-com.svg'}`}
+              alt='menu Icon'
+              onClick={() => setMenuStatus(!menuStatus)}
+              width={30}
+              height={30}
+            />
+          </div>
+          <nav className={`${menuStatus ? 'nav-open' : 'nav-closed'}`}>
             <Link href="/" onClick={handleClick}>
               About
             </Link>

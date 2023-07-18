@@ -24,28 +24,37 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      font-size: 40px;
+      font-size: 20px;
       text-align: center;
       text-shadow: 1px 1px 5px #000;
+      @media all and (min-width: 575px) {
+        font-size: 40px;
+      }
     }
   }
 
   &-grid {
     display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 4rem 0;
     width: 95%;
     margin: 0 auto;
     max-width: 1260px;
     gap: 16px;
+    @media all and (min-width: 575px) {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+    }
 
     .card {
       border: 1px solid #fff;
       padding: 0.5rem;
       display: inline-flex;
       flex-direction: column;
-      flex: 1 1 33%;
+      @media all and (min-width: 575px) {
+        flex: 1 1 33%;
+      }
 
       &:hover {
         img {

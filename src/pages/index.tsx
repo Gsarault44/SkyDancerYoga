@@ -35,6 +35,7 @@ export default function Home() {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
                 priority
               />
+              <h1 className="slider-text">“Dance  in the sky, simply for the delight of it and become one with it all”</h1>
             </div>
             <div>
               <Image
@@ -57,9 +58,9 @@ export default function Home() {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
                 priority
               />
+              <h1 className="slider-text">“I have been attending Wendy’s classes for many years.   In every class, I feel like I learn something new.  My brain and my muscles both get a work out! </h1>
             </div>
             <div>
-              <h1>Dance in the sky, simply for the delight of it and become one with it all</h1>
               <Image
                 src="/hero/dancer-pose.jpg"
                 alt="Fitness"
@@ -69,6 +70,7 @@ export default function Home() {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
                 priority
               />
+              <h1>“One of many reasons that I keep attending Wendy’s classes is because she listens so well to each of us in class.   She will modify exercises so it fits with what issues or concerns everyone in the class has. It feels like it is one on one attention in a class!“&nbsp;<span>—Beth C.</span></h1>
             </div>
             <div>
               <Image
@@ -113,6 +115,7 @@ export default function Home() {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
                 priority
               />
+              <h1 className="slider-text">“Wendy is a gifted yoga instructor -- enthusiastic and encouraging -- who has a huge repertoire of moves she adapts to any student level. As someone who has taken her classes for more than 10 years, I remain awed by her creativity and energy.”&nbsp;<span>—Marilyn M.</span></h1>
             </div>
             <div>
               <Image
