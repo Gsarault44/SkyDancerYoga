@@ -47,8 +47,8 @@ export default function Home() {
                   <path d="M1 1L9 9L17 1" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
               </h4>
-            <div className="modal-wrapper">
-              {isHovering && <div className="modal">
+            <div className="tooltip-wrapper">
+              {isHovering && <div className="tooltip">
                 <ul>
                   <li>- Blanket or large towel</li>
                   <li>- Yoga therapy ball (tennis ball, racquet ball, lacross ball works too)</li>

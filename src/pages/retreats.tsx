@@ -21,7 +21,7 @@ const beliezeImages = [
     alt: 'dive-boat',
   },
   {
-    url: '/belize/final-parting-pic.jpg ',
+    url: '/belize/final-parting-pic.jpg',
     alt: 'inal-parting-pic',
   },
   {
@@ -49,7 +49,7 @@ const beliezeImages = [
     alt: 'pool-ocean',
   },
   {
-    url: '/belize/scuba-tanks.jpg ',
+    url: '/belize/scuba-tanks.jpg',
     alt: 'scuba-tanks',
   },
   {
@@ -76,10 +76,10 @@ const beliezeImages = [
     url: '/belize/wendy-teaching-on-pier2.jpg',
     alt: 'wendy-teaching-on-pier2',
   },
-  {
-    url: '/belize/wendy-teaching-triangle-pose.jpg',
-    alt: 'wendy-teaching-triangle-pose',
-  },
+  // {
+  //   url: '/belize/wendy-teaching-triangle-pose.jpg',
+  //   alt: 'wendy-teaching-triangle-pose',
+  // },
 ];
 
 const dominicaImages = [  
@@ -88,12 +88,16 @@ const dominicaImages = [
   alt: 'dominica side-angle'
 },
 {
-  url: '/dominica/hiking.jpg',
-  alt: 'hiking'
+  url: '/dominica/warrior-II.jpg',
+  alt: 'warrior-II'
 },
 {
   url: '/dominica/reverse-warrior.jpg',
   alt: 'reverse-warrior'
+},
+{
+  url: '/dominica/hiking.jpg',
+  alt: 'hiking'
 },
 {
   url: '/dominica/yoga-pond.jpg',
@@ -118,10 +122,6 @@ const dominicaImages = [
 {
   url: '/dominica/yoga-room.jpg',
   alt: 'yoga-room'
-},
-{
-  url: '/dominica/warrior-II.jpg',
-  alt: 'warrior-II'
 },
 {
   url: '/dominica/kim-scuba.jpg',
@@ -215,14 +215,14 @@ export default function Retreats() {
       </section>
       <section className="retreat retreat-intro">
         <h3>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats. Immerse yourself in serene landscapes, indulge in nourishing practices, and find inner peace amidst nature&apos;s embrace. Whether you&apos;re a seasoned yogi or a curious beginner, our retreats offer a sanctuary where you can reconnect with your mind, body, and soul. Step onto the path of self-discovery, embrace tranquility, and unlock a world of holistic well-being. Join us on a yoga retreat that will leave you refreshed, inspired, and truly transformed.</h3>
-        {/* <Image
-          src={'/belize/yoga-retreat-pic.jpg'}
+        <Image
+          src={'/belize/wendy-teaching-triangle-pose.jpg'}
           alt={'retreat pic'}
-          width={250}
-          height={200}
+          width={500}
+          height={500}
           priority
           style={{ objectFit: 'cover' }}
-        /> */}
+        />
       </section>
       <section className="retreat">
         <h1>Belize Hatchet Caye</h1>
