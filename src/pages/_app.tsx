@@ -30,6 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
    */
   const handleClick = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
+    router.push('/#about', undefined, { shallow: true })
     anchorTarget && anchorTarget?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -47,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <header className={`header ${router.pathname == '/' && 'home'}`}>
         <div>
           <nav>
-            <Link href="#about" onClick={handleClick}>
+            <Link href="/" onClick={handleClick}>
               About
             </Link>
             <Link href="/blog">
