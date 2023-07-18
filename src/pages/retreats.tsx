@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const beliezeImages = [
   {
-    url: '/belize/conch-and-yoga-tattoo.jpg ',
+    url: '/belize/conch-and-yoga-tattoo.jpg',
     alt: 'conch-and-yoga-tattoo',
   },
   {
@@ -13,11 +13,11 @@ const beliezeImages = [
     alt: 'conch-mat-holders',
   },
   {
-    url: '/belize/crane.jpg ',
+    url: '/belize/crane.jpg',
     alt: 'crane',
   },
   {
-    url: '/belize/dive-boat.jpg ',
+    url: '/belize/dive-boat.jpg',
     alt: 'dive-boat',
   },
   {
@@ -65,7 +65,7 @@ const beliezeImages = [
     alt: 'wendy-in-urdvah-hastasana',
   },
   {
-    url: '/belize/wendy-sup.jpg ',
+    url: '/belize/wendy-sup.jpg',
     alt: 'wendy-sup',
   },
   {
@@ -132,23 +132,23 @@ const dominicaImages = [
 
 const curacaoImages = [
 {
-  url: '/curacao/ajay-tree-pose-underwater.jpg ',
+  url: '/curacao/ajay-tree-pose-underwater.jpg',
   alt: 'ajay-tree-pose-underwater'
 },
 {
-  url: '/curacao/scuba-lotus-curacao.jpg ',
+  url: '/curacao/scuba-lotus-curacao.jpg',
   alt: 'scuba-lotus-curacao'
 },
 {
-  url: '/curacao/crow-pose.jpg ',
+  url: '/curacao/crow-pose.jpg',
   alt: 'crow-pose'
 },
 {
-  url: '/curacao/fish.jpg ',
+  url: '/curacao/fish.jpg',
   alt: 'fish'
 },
 {
-  url: '/curacao/santa-barbara.jpg ',
+  url: '/curacao/santa-barbara.jpg',
   alt: 'santa-barbara'
 },
 {
