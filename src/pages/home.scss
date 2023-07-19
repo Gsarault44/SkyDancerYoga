@@ -1,5 +1,5 @@
 .home {
-  color: #fff;
+
   .slick-slide {
     position: relative;
     > div { 
@@ -149,6 +149,7 @@
   &__inner {
     width: 90%;
     max-width: 960px;
+    padding: 3rem 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
