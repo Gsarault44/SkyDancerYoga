@@ -210,7 +210,7 @@ export default function Retreats() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="retreats">    
-      <section className="blogs-hero" style={{ backgroundImage: 'url(/belize/yoga-retreat-pic.jpg)'}}>
+      <section className="retreats-hero" style={{ backgroundImage: 'url(/belize/yoga-retreat-pic.jpg)'}}>
         <h1>Embark on a Soulful Journey: Unleash the Serenity of Yoga and Scuba Diving with Skydancer Retreats!</h1>
       </section>
       <section className="retreat retreat-intro">

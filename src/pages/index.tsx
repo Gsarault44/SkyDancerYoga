@@ -202,11 +202,31 @@ export default function Home() {
         </section>
         <section className="home-retreats">
           <div className="home-retreats__inner">
-            <h2>Join us on a retrat</h2>
-            <p>Embark on a soul-renewing journey at our stunning resort. Join our destination yoga class amidst breathtaking vistas and tranquil beaches. Reconnect with your inner self, guided by experienced instructors. Experience transformative moments of self-discovery and blissful connections with like-minded souls. Unwind, rejuvenate, and elevate your well-being in paradise. Come, find serenity and enchantment at our destination yoga retreat.</p>
+            <h2>Join us on a retreat</h2>
+            <p>Embark on a soul-renewing journey at a stunning resort. Join our destination yoga class amidst breathtaking vistas and tranquil beaches. Reconnect with your inner self, guided by experienced instructors. Experience transformative moments of self-discovery and blissful connections with like-minded souls. Unwind, rejuvenate, and elevate your well-being in paradise. Come, find serenity and enchantment at our destination yoga retreat.</p>
             <Link href="/retreats" className="button">
               Show me more
             </Link>
+          </div>
+        </section>
+        <section className="home-classes">
+          <div className="home-classes__inner">
+            <Image
+              src="/dominica/warrior-II.jpg"
+              alt="Fitness"
+              width={0}
+              height={0}
+              sizes='100vw'
+              style={{ height: 'auto', objectFit: 'cover' }}
+              priority
+            />
+            <div>
+              <h2>Transformative yoga experience awaits you.</h2>
+              <p>Discover the transformative power of yoga at our studio. Nurture your body and mind with invigorating sessions led by skilled instructors. Embrace inner peace, strength, and clarity as you harmonize breath and movement. Join our welcoming community and unlock your limitless potential. Elevate your life through the practice of yoga.</p>
+              <Link href="/retreats" className="button">
+                Sign me up
+              </Link>
+            </div>
           </div>
         </section>
       </main>
