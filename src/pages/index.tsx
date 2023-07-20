@@ -195,9 +195,11 @@ export default function Home() {
             priority
           />
           <div className="about__content">
-            <p>Wendy’s fascination with the human body began at an early age as a dancer.  She still marvels at the sophisticated design of this mortal vehicle and seeks to teach her students practical tools to enhance their life journey both physically and spiritually.</p>
-            <p>Wendy’s classes reflect her belief that properly aligning the body allows us to align with the universe and this alignment benefits both body and soul.  She offers students a slow flow of poses with an opportunity to slow down, stretch-out and re-connect with their innate goodness.  Wendy completed her yoga teacher training with Suzie Hurley at Willow Street Yoga Center in Takoma Park, MD in 2009. She is deeply grateful to the community at Willow Street for their support, encouragement and wisdom.</p>
-            <p>Wendy holds a B.S. in Physical Education and is a certified Exercise Physiologist through the American College of Sports Medicine.  She has been teaching, training and coaching yoga, fitness and wellness since 2002.</p>
+            <h1>Wendy Christensen</h1>
+            <h2>Yoga Instructor, ACSM Certified Exercise Physiologist </h2>
+            <p>Wendy’s fascination with the human body began at an early age as a dancer. She still marvels at the sophisticated design of the human body and seeks to teach her students practical tools to enhance their life journey both physically and spiritually.</p>
+            <p>Wendy’s classes reflect her belief that properly aligning the body allows energy to flow more easily, relieves pain and builds strength. She offers students a slow flow of poses with an opportunity to slow down, stretch-out and re-connect with their innate goodness. Wendy completed her yoga teacher training with Suzie Hurley at Willow Street Yoga Center in Takoma Park, MD. She is deeply grateful to the community at Willow Street for their support, encouragement and wisdom.</p>
+            <p>Wendy holds a B.S. in Physical Education and is a certified Exercise Physiologist through the American College of Sports Medicine. She is currently the Fitness Director for Georgetown University Law Center.</p>
           </div>
         </section>
         <section className="home-retreats">
