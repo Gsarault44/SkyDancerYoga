@@ -70,7 +70,7 @@ export default function Home() {
                 style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
                 priority
               />
-              <h1>“One of many reasons that I keep attending Wendy’s classes is because she listens so well to each of us in class.   She will modify exercises so it fits with what issues or concerns everyone in the class has. It feels like it is one on one attention in a class!“&nbsp;<span>—Beth C.</span></h1>
+              <h1>“One of the many reasons that I keep attending Wendy’s classes is because she listens so well to each of us in class. She will modify exercises so it fits with what issues or concerns everyone in the class has.   It feels like it is one-on-one attention in a class!“&nbsp;<span>—Beth C.</span></h1>
             </div>
             <div>
               <Image
