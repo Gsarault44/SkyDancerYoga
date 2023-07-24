@@ -82,6 +82,28 @@ export default function Home() {
             <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776" target="_blank">Sign up</Link>
           </div>
         </section>
+        <section className="lotus">
+          <div className="lotus__inner">
+            <div>
+              <Image
+                src="/lotus-flower.jpg"
+                alt="Fitness"
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                priority
+              />
+            </div>
+            <div>
+              <h1>Monday Morning Yoga on Zoom 45-min</h1>
+              <p>Revitalize your Mondays with 45-minute Zoom yoga. Experienced instructor, seamless flow, and renewed energy. Suitable for all levels, start your week centered and balanced. Join us for a revitalizing online class.</p>
+              <div>
+                <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Join in</Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
