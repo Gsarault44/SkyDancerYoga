@@ -95,7 +95,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Link href="/blog">
               Blog
             </Link>
-            <Link href="#">
+            <Link href="https://sky-dancer-fitness.vercel.app/">
               Fitness
             </Link>
             <Link href="https://sky-dancer.vercel.app/dance">
