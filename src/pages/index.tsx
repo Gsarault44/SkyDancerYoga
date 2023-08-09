@@ -152,7 +152,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/hero/warrior-II-bluish.jpg"
+                src="/warrior-II-bluish.jpg"
                 alt="Fitness"
                 width={0}
                 height={0}
@@ -225,7 +225,7 @@ export default function Home() {
             <div>
               <h2>Transformative yoga experience awaits you.</h2>
               <p>Discover the transformative power of yoga at our studio. Nurture your body and mind with invigorating sessions led by skilled instructors. Embrace inner peace, strength, and clarity as you harmonize breath and movement. Join our welcoming community and unlock your limitless potential. Elevate your life through the practice of yoga.</p>
-              <Link href="/retreats" className="button">
+              <Link href="/classes" className="button">
                 Sign me up
               </Link>
             </div>

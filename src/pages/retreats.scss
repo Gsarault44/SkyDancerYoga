@@ -37,7 +37,7 @@
 .retreat {
   max-width: 1260px;
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
 
   h1 {
     font-size: 24px;
@@ -55,7 +55,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem; 
+  padding-bottom: 2rem; 
   > img {
     flex: 1 1 25%;
     object-position: top;
@@ -63,11 +63,17 @@
 }
 
 .retreat-intro {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  @media all and (min-width: 876px) {
+    flex-direction: row;
+  }
   > * {
-    flex: 1 1 50%;
+    @media all and (min-width: 876px) {
+      flex: 1 1 50%;
+    }
   }
   h3 {
     padding: 1rem;

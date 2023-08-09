@@ -161,24 +161,31 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 876px) {
       flex-direction: row;
     }
     h2 {
       margin-bottom: 1.5rem;
-      font-size: 24px;
+      font-size: 30px;
       line-height: 1.2;
-      @media all and (min-width: 575px) {
+      @media all and (min-width: 876px) {
         font-size: 44px;
       }
     }
 
     > * {
-      flex: 1 1 50%;
       padding: 1.5rem;
+      @media all and (min-width: 876px) {
+        flex: 1 1 50%;
+      }
     } 
     img {
+      width: 100%;
+      display: block; 
       max-width: 100%;
+      @media all and (min-width: 876px) {
+        width: 50%;
+      }
     }
     .button {
       background: #fff;

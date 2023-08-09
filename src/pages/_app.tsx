@@ -103,7 +103,7 @@ export default function App({ Component, pageProps }: AppProps) {
             </Link>
           </nav>
         </div>
-        </header>
+      </header>
       <Component {...pageProps} />
       <footer>
         <p>Copyright &copy; {currentYear} SkydancerEntertainment - All Rights Reserved.</p>
