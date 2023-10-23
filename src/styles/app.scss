@@ -41,7 +41,7 @@ button.button {
   z-index: 999;
   position: fixed;
   background-color: #000;
-  @media all and (min-width: 575px) {
+  @media all and (min-width: 940px) {
 
     background-color: rgba(#000, 0.15);
   }
@@ -57,7 +57,7 @@ button.button {
     width: 100%;
     align-items: center;
     max-width: 95%;
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 940px) {
       display: none;
     }
   }
@@ -69,27 +69,27 @@ button.button {
     flex-direction: column;
     overflow: hidden;
 
-    @media all and (min-width: 575px) {
+    @media all and (min-width: 940px) {
       flex-direction: row;
       height: auto;
     }
 
     &.nav-open {
       height: 100vh;
-      @media all and (min-width: 575px) {
+      @media all and (min-width: 940px) {
         height: auto;
       }
     }
     &.nav-closed {
       height: 0vh;
-      @media all and (min-width: 575px) {
+      @media all and (min-width: 940px) {
         height: auto;
       }
     }
 
     .menu-button {
       display: block;
-      @media all and (min-width: 575px) {
+      @media all and (min-width: 940px) {
         display: none;
       }
     }

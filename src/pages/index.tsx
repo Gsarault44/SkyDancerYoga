@@ -15,6 +15,15 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 2500,
   };
+
+  const testimonialSettings = {
+    fade: true,
+    infinite: true,
+    slidesToShow: 1,
+    initialSlide: 0,
+    slidesToScroll: 1,
+    arrows: true,
+  };
   return (
     <>
       <Head>
@@ -210,6 +219,23 @@ export default function Home() {
               Show me more
             </Link>
           </div>
+        </section>
+        <section className="testimonials">
+          <h2>Testimonial</h2>
+          <Slider {...testimonialSettings}>
+            <blockquote>
+              <p>“We were lucky to find Wendy&rsquo;s in-person small group yoga class before covid hit has proven to be especially restorative and helpful as we continued with zoom classes since March 2020. Wendy carefully describes poses and movements, offers adaptations for folks with different abilities or injuries, and consistently cultivates a positive, caring space — a true feat on zoom and in-person.“</p>
+              <cite>Monique & Doug <br />Arlington, VA</cite>
+            </blockquote>
+            <blockquote>
+              <p>“One of the many reasons that I keep attending Wendy’s classes is because she listens so well to each of us in class. She will modify exercises so it fits with what issues or concerns everyone in the class has. It feels like it is one-on-one attention in a class!“</p>
+              <cite>Beth C.</cite>
+            </blockquote>
+            <blockquote>
+              <p>“Wendy is a gifted yoga instructor -- enthusiastic and encouraging -- who has a huge repertoire of moves she adapts to any student level. As someone who has taken her classes for more than 10 years, I remain awed by her creativity and energy.”</p>
+              <cite>Marilyn M.</cite>
+            </blockquote>
+          </Slider>
         </section>
         <section className="home-classes">
           <div className="home-classes__inner">
