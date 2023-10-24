@@ -20,6 +20,10 @@
       margin-top: 1rem;
       color: #000
     }
+    .slick-slider {
+      max-width: 768px;
+      margin: 0 auto;
+    }
     .slick-slide {
       &::before {
         display: none;
