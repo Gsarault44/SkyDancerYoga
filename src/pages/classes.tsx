@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`classes`}>
-        <section className="classes-hero" style={{ backgroundImage: 'url(/natarajasana.jpg)'}}>
+        <section className="classes-hero" style={{ backgroundImage: 'url(/hero/yoga-beach.jpg)'}}>
           <h1>Tailored yoga sessions designed to restore your body&apos;s harmony, leaving you revitalized and flexible.</h1>
         </section>
         <section className="split-content">
@@ -79,7 +79,7 @@ export default function Home() {
             <h1>Yoga + Brunch</h1>
             <p>Yoga + Brunch is offered once per month.  This is an in-person class at the Hyatt Courthouse in Arlington, VA.  This class is a luxurious movement experience that will leave your joints more mobile, your muscles longer, your spirit calmer and you a little taller!  Join us for brunch following class and get to know your fellow yogis!</p>
             <span>Sundays 10:30am-11:45a Brunch at 12pm</span>
-            <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776" target="_blank">Sign up</Link>
+            <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=27787580" target="_blank">Sign up</Link>
           </div>
         </section>
         <section className="lotus">

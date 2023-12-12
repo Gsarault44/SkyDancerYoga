@@ -83,24 +83,26 @@ export default function App({ Component, pageProps }: AppProps) {
                 priority
               />
             </Link>
-            <Link href="/" onClick={handleClick}>
-              About
-            </Link>
-            <Link href="/retreats">
-              Retreats
-            </Link>
-            <Link href="/classes">
-              Classes
-            </Link>
-            <Link href="/blog">
-              Blog
-            </Link>
-            <Link href="https://sky-dancer-fitness.vercel.app/">
-              Fitness
-            </Link>
-            <Link href="https://sky-dancer.vercel.app/dance">
-              Entertainment
-            </Link>
+            <div>
+              <Link href="/" onClick={handleClick}>
+                About
+              </Link>
+              <Link href="/retreats">
+                Retreats
+              </Link>
+              <Link href="/classes">
+                Classes
+              </Link>
+              <Link href="/blog">
+                Blog
+              </Link>
+              <Link href="https://sky-dancer-fitness.vercel.app/">
+                Fitness
+              </Link>
+              <Link href="https://sky-dancer.vercel.app/dance">
+                Entertainment
+              </Link>
+            </div>
           </nav>
         </div>
       </header>
