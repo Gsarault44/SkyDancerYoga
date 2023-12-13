@@ -38,15 +38,12 @@ export default function Home() {
             <h1>Mindful Movement:</h1>
             <p>Mindful Movement is tailored specifically to the participants.  At the beginning of class I ask everyone to shout out an area of the body that is maybe ailing them or feels tight that day.  I sequence the class specifically to what body parts the participants give me.  THIS IS NOT FLOW YOGA!  Sometimes we stay on our backs the entire class, sometimes we roll out on a yoga therapy ball.  The Sky is the limit but I guarantee that you will leave feeling more mobile and less tight.</p>
             
-              <h4
-                className={isHovering ? 'open' : ''}
-                onClick={() => setIsHovered(!isHovering)}>
-              >
+              <button className={`toggle-tooltip ${isHovering ? 'open' : ''}`} onClick={() => setIsHovered(!isHovering)}>
                 Props needed &nbsp;
                 <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L9 9L17 1" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
-              </h4>
+              </button>
             <div className="tooltip-wrapper">
               {isHovering && <div className="tooltip">
                 <ul>
