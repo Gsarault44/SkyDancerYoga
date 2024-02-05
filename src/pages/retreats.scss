@@ -37,11 +37,12 @@
 .retreat {
   max-width: 1260px;
   width: 95%;
-  margin: 0 auto 4rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
 
   h1 {
     font-size: 24px;
-    padding: 3rem 0;
+    padding-bottom: 3rem;
     text-align: center;
     @media all and (min-width: 575px) {
       font-size: 36px;
@@ -59,6 +60,7 @@
   > img {
     flex: 1 1 25%;
     object-position: top;
+    cursor: pointer;
   }
 }
 

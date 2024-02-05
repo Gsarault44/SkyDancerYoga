@@ -49,7 +49,7 @@ export default function Home() {
         <section className="blogs-grid">
           {blogs.map(blog => {
             return(
-              <Link href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`} className="card" key={blog.title}>
+              <div className="card" key={blog.title}>
                 <div className="card-media">
                   <Image
                     src={blog.imgSrc}
@@ -61,11 +61,12 @@ export default function Home() {
                     priority
                   />
                 </div>
-                <div>
+                <div className="card-content">
                   <h3>{blog.title}</h3>
+                  <p>{blog.excerpt}</p>
+                  <Link href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`} className="card-link button" >Read more</Link>
                 </div>
-                <p>{blog.excerpt}</p>
-              </Link>
+              </div>
             )
           })}
         </section>

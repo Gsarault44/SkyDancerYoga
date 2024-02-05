@@ -1,0 +1,21 @@
+.missing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+  
+    a {
+      text-decoration: underline;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -56,7 +56,7 @@ export default function Home() {
               </div>}
             </div>
             <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=26815799" target="_blank">
-              Join Now
+              Join
             </Link>
           </div>
           <div>
@@ -76,7 +76,7 @@ export default function Home() {
             <h1>Yoga + Brunch</h1>
             <p>Yoga + Brunch is offered once per month.  This is an in-person class at the Hyatt Courthouse in Arlington, VA.  This class is a luxurious movement experience that will leave your joints more mobile, your muscles longer, your spirit calmer and you a little taller!  Join us for brunch following class and get to know your fellow yogis!</p>
             <span>Sundays 10:00am - 11:15pm Brunch at 11:30am</span>
-            <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=27787580" target="_blank">Sign up</Link>
+            <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=27787580" target="_blank">Join</Link>
           </div>
         </section>
         <section className="lotus">
@@ -96,7 +96,7 @@ export default function Home() {
               <h1>Monday Morning Yoga on Zoom 45-min</h1>
               <p>Revitalize your Mondays with 45-minute Zoom yoga. Experienced instructor, seamless flow, and renewed energy. Suitable for all levels, start your week centered and balanced. Join us for a revitalizing online class.</p>
               <div>
-                <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Join in</Link>
+                <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Join</Link>
               </div>
             </div>
           </div>

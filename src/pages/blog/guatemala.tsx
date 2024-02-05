@@ -55,7 +55,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ width: '90%', height: '500px', objectFit: 'contain' }}
+                style={{ width: '95%', height: '600px', objectFit: 'contain' }}
                 priority
               />
             </div>
