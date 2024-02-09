@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
+import Head from "next/head";
 import '@styles/app.scss';
 import { Nanum_Gothic, Poppins } from 'next/font/google'
 import { useRouter } from 'next/router';
@@ -53,6 +54,22 @@ export default function App({ Component, pageProps }: AppProps) {
           font-weight: 200;
         }
       `}</style>
+      <Head>
+        <meta name="description" content="Transformative yoga experience."/>
+
+        <meta property="og:url" content="https://sky-dancer-yoga.vercel.app/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Skydancer yoga"/>
+        <meta property="og:description" content="Transformative yoga experience."/>
+        <meta property="og:image" content="/dancer.jpg"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="sky-dancer-yoga.vercel.app"/>
+        <meta property="twitter:url" content="https://sky-dancer-yoga.vercel.app/"/>
+        <meta name="twitter:title" content="Skydancer yoga"/>
+        <meta name="twitter:description" content="Transformative yoga experience."/>
+        <meta name="twitter:image" content="/dancer.jpg"/>
+      </Head>
       <header className={`header ${router.pathname == '/' && 'home'}`}>
         <div>
           <div className="menu-button">
