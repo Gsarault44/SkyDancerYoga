@@ -46,6 +46,50 @@ button.button {
 
     background-color: rgba(#000, 0.15);
   }
+  img {
+    display: block;
+    filter: grayscale(1) brightness(3.5);
+  }
+
+  .fitness {
+    border-bottom: 0;
+    padding: 0;
+    &:hover {
+      border-bottom: 0;
+    }
+    img {
+      display: block;
+      filter: grayscale(1) brightness(3.5);
+      object-fit: contain;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .ent {
+    border-bottom: 0;
+    padding: 0;
+    &:hover {
+      border-bottom: 0;
+    }
+  }
+
+  .header-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media all and (min-width: 940px) {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &-ext {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+  }
 
   .menu-button {
     position: fixed;

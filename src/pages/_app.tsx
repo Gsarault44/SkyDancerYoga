@@ -46,9 +46,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
-        html nav * {
-          font-family: ${inter.style.fontFamily};
-        }
         html body * {
           font-family: ${pop.style.fontFamily};
           font-weight: 200;
@@ -100,25 +97,39 @@ export default function App({ Component, pageProps }: AppProps) {
                 priority
               />
             </Link>
-            <div>
-              <Link href="/" onClick={handleClick}>
-                About
-              </Link>
-              <Link href="/retreats">
-                Retreats
-              </Link>
-              <Link href="/classes">
-                Classes
-              </Link>
-              <Link href="/blog">
-                Blog
-              </Link>
-              <Link href="https://sky-dancer-fitness.vercel.app/">
-                Fitness
-              </Link>
-              <Link href="https://sky-dancer.vercel.app/dance">
-                Entertainment
-              </Link>
+            <div className="header-links">
+              <div className="header-links-group">
+                <Link href="/" onClick={handleClick}>
+                  About
+                </Link>
+                <Link href="/retreats">
+                  Retreats
+                </Link>
+                <Link href="/classes">
+                  Classes
+                </Link>
+                <Link href="/blog">
+                  Blog
+                </Link>
+              </div>
+              <div className="header-links-ext">
+                <Link href="https://sky-dancer-fitness.vercel.app/" className="fitness">
+                  <Image
+                    src="/fitness.png"
+                    alt="SkyDancer Fitness"
+                    width={120}
+                    height={60}
+                  />
+                </Link>
+                <Link href="https://sky-dancer.vercel.app/dance" className="ent">
+                  <Image
+                    src="/logo.png"
+                    alt="SkyDancer Entertainment"
+                    width={100}
+                    height={50}
+                  />
+                </Link>
+              </div>
             </div>
           </nav>
         </div>

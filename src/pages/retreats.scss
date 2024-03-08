@@ -27,7 +27,7 @@
       transform: translate(-50%, -50%);
       font-size: 20px;
       text-align: center;
-      text-shadow: 1px 1px 1px #000;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.75);
       @media all and (min-width: 575px) {
         font-size: 40px;
       }
@@ -38,11 +38,11 @@
   max-width: 1260px;
   width: 95%;
   padding-bottom: 2rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 
   h1 {
     font-size: 24px;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     text-align: center;
     @media all and (min-width: 575px) {
       font-size: 36px;
