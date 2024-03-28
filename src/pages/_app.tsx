@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
@@ -43,6 +44,13 @@ export default function App({ Component, pageProps }: AppProps) {
     setMenuStatus(false); // Close the navigation panel
   }, [ pathname ]);
 
+  const [scroll, setScroll] = React.useState(false);
+  React.useEffect(() => {
+   window.addEventListener("scroll", () => {
+     setScroll(window.scrollY > 50);
+   });
+ }, []);
+
   return (
     <>
       <style jsx global>{`
@@ -67,7 +75,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:description" content="Transformative yoga experience."/>
         <meta name="twitter:image" content="/dancer.jpg"/>
       </Head>
-      <header className={`header ${router.pathname == '/' && 'home'}`}>
+      <header className={`header ${router.pathname == '/' && 'home'} ${scroll ? 'bg-black' : ''}` }>
         <div>
           <div className="menu-button">
             <Link href="/" className="logo">

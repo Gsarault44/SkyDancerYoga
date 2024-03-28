@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
@@ -25,7 +26,9 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 8000,
     arrows: true,
+    adaptiveHeight: true,
   };
+
   return (
     <>
       <Head>
@@ -43,7 +46,7 @@ export default function Home() {
                 width={0}
                 height={0}
                 sizes='100vw'
-                style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+                style={{ width: '100%', minHeight: '100vh', objectFit: 'cover' }}
                 priority
               />
               <h1 className="slider-text">“Dance  in the sky, simply for the delight of it and become one with it all”</h1>
@@ -202,7 +205,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes='100vw'
-            style={{ width: '100%', height: '100vh', objectFit: 'cover' }}
+            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             priority
           />
           <div className="about__content">
