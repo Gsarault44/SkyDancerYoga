@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div>
               <h1>Monday Morning Yoga on Zoom 45-min</h1>
-              <p>Revitalize your Mondays with 45-minute Zoom yoga. Experienced instructor, seamless flow, and renewed energy. Suitable for all levels, start your week centered and balanced. Join us for a revitalizing online class.</p>
+              <p>Revitalize your Mondays with a 45-minute Zoom yoga. Experience renewed energy going into your week.  Suitable for all levels, start your week centered and balanced!  Join us online and jumpstart your week!</p>
               <div>
                 <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Book A Class</Link>
               </div>
