@@ -121,7 +121,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 </Link>
               </div>
               <div className="header-links-ext">
-                <Link href="https://sky-dancer-fitness.vercel.app/" className="fitness">
+                <Link href="https://www.skydancerfitness.com/" className="fitness">
                   <Image
                     src="/fitness.png"
                     alt="SkyDancer Fitness"
@@ -129,7 +129,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     height={60}
                   />
                 </Link>
-                <Link href="https://sky-dancer.vercel.app/dance" className="ent">
+                <Link href="https://skydancerentertainment.com/" className="ent">
                   <Image
                     src="/logo.png"
                     alt="SkyDancer Entertainment"
