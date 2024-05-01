@@ -133,7 +133,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   <Image
                     src="/logo.png"
                     alt="SkyDancer Entertainment"
-                    width={100}
+                    width={120}
                     height={50}
                   />
                 </Link>
