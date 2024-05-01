@@ -65,6 +65,13 @@
       padding: 4rem 0;
     }
 
+    &-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+    }
+
     > * {
       flex: 1 1 50%;
     }
@@ -73,12 +80,13 @@
       padding: 0 1rem;
     }
 
-    p, h1 {
+    p {
       margin-bottom: 1rem; 
     }
 
     .toggle-tooltip {
       display: inline-block;
+      color: #fff;
       cursor: pointer;
       border-bottom: 1px solid transparent;
       transition: all 0.23s ease-in-out;
@@ -111,8 +119,8 @@
   display: flex;
   justify-content: flex-end;
   &__inner {
-    padding: 4rem 1rem;
-    width: 100%;
+    padding: 4rem 0;
+    width: 95%;
     max-width: 1260px;
     margin: 0 auto;
     text-align: right;

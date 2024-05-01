@@ -35,7 +35,10 @@ export default function Home() {
         </section>
         <section className="split-content">
           <div>
-            <h1>Mindful Movement:</h1>
+            <div className="split-content-intro">
+              <h1>Mindful Movement:</h1>
+              <h4>Fridays @ 5:30pm on ZOOM</h4>
+            </div>
             <p>Mindful Movement is tailored specifically to the participants.  At the beginning of class I ask everyone to shout out an area of the body that is maybe ailing them or feels tight that day.  I sequence the class specifically to what body parts the participants give me.  THIS IS NOT FLOW YOGA!  Sometimes we stay on our backs the entire class, sometimes we roll out on a yoga therapy ball.  The Sky is the limit but I guarantee that you will leave feeling more mobile and less tight.</p>
             
               <button className={`toggle-tooltip ${isHovering ? 'open' : ''}`} onClick={() => setIsHovered(!isHovering)}>
