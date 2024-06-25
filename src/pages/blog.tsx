@@ -44,7 +44,7 @@ export default function Home() {
       </Head>
       <main className={`blogs`}>
         <section className="blogs-hero" style={{ backgroundImage: 'url(/Plant.jpg)'}}>
-          <h1>Dive Into the Transformative World of Yoga Through Our Experences</h1>
+          <h1>Dive Into the Transformative World of Yoga Through Our experiences</h1>
         </section>
         <section className="blogs-grid">
           {blogs.map(blog => {
