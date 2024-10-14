@@ -78,7 +78,7 @@ export default function Home() {
           <div className="figure-section__inner">
             <h1>Yoga + Brunch</h1>
             <p>Yoga + Brunch is offered once per month.  This is an in-person class at the Hyatt Courthouse in Arlington, VA.  This class is a luxurious movement experience that will leave your joints more mobile, your muscles longer, your spirit calmer and you a little taller!  Join us for brunch following class and get to know your fellow yogis!</p>
-            <span>Sundays 10:00am - 11:15pm Brunch at 11:30am</span>
+            <span>Sundays 10:00am - 11:15am Brunch at 11:30am</span>
             <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=27787580" target="_blank">Book A Class</Link>
           </div>
         </section>
