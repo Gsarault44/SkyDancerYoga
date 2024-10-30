@@ -214,7 +214,13 @@ export default function Retreats() {
         <h1>Embark on a Soulful Journey: Unleash the Serenity of Yoga and Scuba Diving with Skydancer Retreats!</h1>
       </section>
       <section className="retreat retreat-intro">
-        <h3>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats. Immerse yourself in serene landscapes, indulge in nourishing practices, and find inner peace amidst nature&apos;s embrace. Whether you&apos;re a seasoned yogi or a curious beginner, our retreats offer a sanctuary where you can reconnect with your mind, body, and soul. Step onto the path of self-discovery, embrace tranquility, and unlock a world of holistic well-being. Join us on a yoga retreat that will leave you refreshed, inspired, and truly transformed.</h3>
+        <div>
+          <h3>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats. Immerse yourself in serene landscapes, indulge in nourishing practices, and find inner peace amidst nature&apos;s embrace. Whether you&apos;re a seasoned yogi or a curious beginner, our retreats offer a sanctuary where you can reconnect with your mind, body, and soul. Step onto the path of self-discovery, embrace tranquility, and unlock a world of holistic well-being. Join us on a yoga retreat that will leave you refreshed, inspired, and truly transformed.</h3>
+          <h4>Join us on our next retreat</h4>
+          <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
+          {/* <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  */}
+          <script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></script>
+        </div>
         <Image
           src={'/belize/wendy-teaching-triangle-pose.jpg'}
           alt={'retreat pic'}
