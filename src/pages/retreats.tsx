@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { SetStateAction, useState } from 'react';
+import Script from 'next/script'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -219,7 +220,7 @@ export default function Retreats() {
           <h4>Join us on our next retreat</h4>
           <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
           {/* <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  */}
-          <script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></script>
+          <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script>
         </div>
         <Image
           src={'/belize/wendy-teaching-triangle-pose.jpg'}
