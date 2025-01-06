@@ -3,14 +3,13 @@ import { useEffect, useState } from 'react';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from "next/head";
+import Script from 'next/script'
 import '@styles/app.scss';
 import { Nanum_Gothic, Poppins } from 'next/font/google'
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-const inter = Nanum_Gothic({ weight: "400", subsets: ['latin'] })
 const pop = Poppins({ weight: ["300", "500"], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -50,6 +49,8 @@ export default function App({ Component, pageProps }: AppProps) {
      setScroll(window.scrollY > 50);
    });
  }, []);
+ const [open, setOpen] = useState(true);
+
 
   return (
     <>
@@ -142,6 +143,18 @@ export default function App({ Component, pageProps }: AppProps) {
           </nav>
         </div>
       </header>
+      <div className={`${open ? 'pop-card open': 'pop-card'} `}>
+        <button className='pop-card-close' onClick={() => setOpen(false)}>X</button>
+        <Image
+          src="/belize/pool-ocean.jpg"
+          alt="Over looking a pool"
+          width={376}
+          height={320}
+        />
+        <p>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats.</p>
+        <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
+        <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script>
+      </div>
       <Component {...pageProps} />
       <footer>
         <p>Copyright &copy; {currentYear} SkydancerEntertainment - All Rights Reserved.</p>
