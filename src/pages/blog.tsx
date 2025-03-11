@@ -46,6 +46,12 @@ export default function Home() {
         <section className="blogs-hero" style={{ backgroundImage: 'url(/Plant.jpg)'}}>
           <h1>Dive Into the Transformative World of Yoga Through Our experiences</h1>
         </section>
+        <section className="blog-intro">
+          <p>Take yourself to a time when excitement boiled inside you, your emotion barely contained. Maybe at your favorite concert or just after a big win in your particular sport or art. Just before you said “yes” to the love of your life, upon opening an admission letter or crossing the finish line…..  It is at those times that you, indeed(!), feel ”one with it all.” It is these moments that we are truly in the flow.</p>
+          <p>There is a constant flow of grace that the universe invites you to step into. Yoga is one avenue, one vehicle to help you step into that flow….to come home.</p>
+          <p>Skydancer yoga invites you to be yourself with reckless abandon, to dance to the beat of your own drum, to tap into that uninhibited place inside that pulls you into the divine dance of your own, pure authenticity.</p>
+          <p>Please join me in my dance in the sky.</p>
+        </section>
         <section className="blogs-grid">
           {blogs.map(blog => {
             return(
