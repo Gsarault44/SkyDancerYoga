@@ -33,6 +33,28 @@ export default function Home() {
         <section className="classes-hero" style={{ backgroundImage: 'url(/hero/yoga-beach.jpg)'}}>
           <h1>Tailored yoga sessions designed to restore your body&apos;s harmony, leaving you revitalized and flexible.</h1>
         </section>
+        <section className="lotus">
+          <div className="lotus__inner">
+            <div>
+              <Image
+                src="/lotus-flower.jpg"
+                alt="Fitness"
+                width={0}
+                height={0}
+                sizes='100vw'
+                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                priority
+              />
+            </div>
+            <div>
+              <h1>Monday Morning Yoga on Zoom 45-min</h1>
+              <p>Revitalize your Mondays with a 45-minute Zoom yoga. Experience renewed energy going into your week.  Suitable for all levels, start your week centered and balanced!  Join us online and jumpstart your week!</p>
+              <div>
+                <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Book A Class</Link>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="split-content">
           <div>
             <div className="split-content-intro">
@@ -82,28 +104,7 @@ export default function Home() {
             <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=27787580" target="_blank">Book A Class</Link>
           </div>
         </section>
-        <section className="lotus">
-          <div className="lotus__inner">
-            <div>
-              <Image
-                src="/lotus-flower.jpg"
-                alt="Fitness"
-                width={0}
-                height={0}
-                sizes='100vw'
-                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-                priority
-              />
-            </div>
-            <div>
-              <h1>Monday Morning Yoga on Zoom 45-min</h1>
-              <p>Revitalize your Mondays with a 45-minute Zoom yoga. Experience renewed energy going into your week.  Suitable for all levels, start your week centered and balanced!  Join us online and jumpstart your week!</p>
-              <div>
-                <Link className="button" href="https://app.acuityscheduling.com/schedule.php?owner=19156776&appointmentType=42187233" target="_blank">Book A Class</Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        
       </main>
     </>
   )
