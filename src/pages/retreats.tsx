@@ -46,10 +46,6 @@ const beliezeImages = [
     alt: 'palm-trees',
   },
   {
-    url: '/belize/pool-ocean.jpg',
-    alt: 'pool-ocean',
-  },
-  {
     url: '/belize/scuba-tanks.jpg',
     alt: 'scuba-tanks',
   },
@@ -157,12 +153,43 @@ const curacaoImages = [
   alt: 'retreat-santa-barbara'
 },
 ];
+const mexicoImages = [
+  {
+    url: '/mexico/20260403_163756.jpg',
+    alt: 'beach'
+  },
+  {
+    url: '/mexico/20260403_211547.jpg',
+    alt: 'night life'
+  },
+  {
+    url: '/mexico/20260404_085401.jpg',
+    alt: 'yoga stance'
+  },
+  {
+    url: '/mexico/20260404_175900(0).jpg',
+    alt: 'people sitting in front of yoga mats'
+  },
+  {
+    url: '/mexico/20260405_173951.jpg',
+    alt: 'yoga studio on the beach'
+  },
+  {
+    url: '/mexico/20260405_174014.jpg',
+    alt: 'yoga studio on the beach with mats'
+  },
+  {
+    url: '/mexico/20260403_142114.jpg',
+    alt: 'food with lime'
+  }
+];
 
 export default function Retreats() {
   const [showBeliezeModal, setShowBeliezeModal] = useState(false);
   const [showDominicaModal, setShowDominicaModal] = useState(false);
   const [showCuracaoModal, setShowCuracaoModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [showMexicoModal, setShowMexicoModal] = useState(null);
 
 
   const openBeliezeModal = (index: number) => {
@@ -180,11 +207,17 @@ export default function Retreats() {
     setShowCuracaoModal(true);
   };
 
+  const openMexicoModal = (index: number) => {
+    setSelectedImageIndex(index);
+    setShowMexicoModal(true);
+  }
+
   const closeModal = () => {
     setShowBeliezeModal(false);
     setShowDominicaModal(false);
     setShowCuracaoModal(false);
     setSelectedImageIndex(null);
+    setShowMexicoModal(false);
   };
 
   const navigateImage = (direction: string, images: string | any[]) => {
@@ -216,11 +249,12 @@ export default function Retreats() {
       </section>
       <section className="retreat retreat-intro">
         <div>
-          <h3>Escape the hustle and bustle of everyday life and embark on a transformative journey with our rejuvenating yoga retreats. Immerse yourself in serene landscapes, indulge in nourishing practices, and find inner peace amidst nature&apos;s embrace. Whether you&apos;re a seasoned yogi or a curious beginner, our retreats offer a sanctuary where you can reconnect with your mind, body, and soul. Step onto the path of self-discovery, embrace tranquility, and unlock a world of holistic well-being. Join us on a yoga retreat that will leave you refreshed, inspired, and truly transformed.</h3>
+          <h3>Skydancer Yoga presents the first-of-its-kind Yoga/Scuba Retreats. We unite the focused breathing and mindful mindset of yoga with the tranquility of diving. These retreats are built for all levels: yogis and non-yogis, divers and non-divers. If deep-sea exploration isn&apos;t for you, there are plenty of activities to enjoy while staying on land.</h3>
           <h4>Join us on our next retreat</h4>
-          <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a> 
+          {/* <a className="wtrvl-checkout_button button" id="wetravel_button_widget" data-env="https://www.wetravel.com" data-version="v0.3" data-uid="1154190" data-uuid="83061662" href="https://www.wetravel.com/checkout_embed?uuid=83061662" target="_blank">Book Now</a>  */}
           {/* <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  */}
-          <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script>
+          {/* <Script src="https://cdn.wetravel.com/widgets/embed_checkout.js"></Script> */}
+          <a className="button" href="https://app.acuityscheduling.com/catalog.php?owner=19156776&category=Mindful+Movement" target="_blank">Check out some of our packages</a>
         </div>
         <Image
           src={'/belize/wendy-teaching-triangle-pose.jpg'}
@@ -230,6 +264,39 @@ export default function Retreats() {
           priority
           style={{ objectFit: 'cover' }}
         />
+      </section>
+      <section className="retreat">
+        <h1>Mexico Suba Retreat</h1>
+        <div className="image-grid">
+          {mexicoImages.map((image, index) => (
+            <Image
+              className="image"
+              key={image.alt}
+              src={image.url}
+              alt={image.alt}
+              onClick={() => openMexicoModal(index)}
+              width={250}
+              height={200}
+              priority
+              style={{ objectFit: 'cover' }}
+            />
+          ))}
+          {showMexicoModal && (
+            <div className="modal">
+              <span className="close-button" onClick={closeModal}>
+                &times;
+              </span>
+              <span className="prev-button" onClick={() => navigateImage('prev', mexicoImages)}>
+                &#10094;
+              </span>
+              <img src={mexicoImages[selectedImageIndex].url} alt={mexicoImages[selectedImageIndex].url} />
+              <span className="next-button" onClick={() => navigateImage('next', mexicoImages)}>
+                &#10095;
+              </span>
+            </div>
+          )}
+        </div>
+
       </section>
       <section className="retreat">
         <h1>Belize Hatchet Caye</h1>
